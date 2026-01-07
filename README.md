@@ -1,29 +1,30 @@
 # Books Scraper
 
-A Python scraper for [Books to Scrape](https://books.toscrape.com/), designed to collect book details and save them in CSV and JSON formats. This repository contains two versions of the scraper: a basic version (v1) and an updated version (v2).
+A Python scraper for [Books to Scrape](https://books.toscrape.com/). This repository contains two versions of the scraper: a basic version (v1) and an updated version (v2).
 
 ---
 
-## 📌 Versions
+## Versions
 
-### **Version 1 (Basic)**
-- Simple scraper without advanced features
-- Collects:
-  - Book title
+### v1 (Basic)
+- Simple scraper for Books to Scrape
+- Collects the following data for each book:
+  - Title
   - Price
   - Stock availability
   - Rating
   - Image URL
   - Book URL
-- Saves data into **CSV** and **JSON** files
+- Saves data to **CSV** and **JSON**
 - Ideal for learning basic web scraping
 
-### **Version 2 (Updated)**
+### v2 (Updated)
 - Uses `requests.Session()` for faster and more efficient scraping
 - Includes **error handling** for network issues and timeouts
 - More robust scraping across multiple pages
-- Still outputs **CSV** and **JSON**
-- Recommended for real scraping tasks
+- Collects the same data as v1
+- Saves data to **CSV** and **JSON**
+- Recommended for practical scraping tasks
 
 ---
 
@@ -36,4 +37,9 @@ A Python scraper for [Books to Scrape](https://books.toscrape.com/), designed to
 
 ---
 
-## 📦 Require
+## 📦 Requirements
+
+Make sure you have Python 3.x installed. Then install the required packages:
+
+```bash
+pip install requests beautifulsoup4
